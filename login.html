@@ -17,11 +17,12 @@
       <h1 class="h3 mb-3 fw-normal">Please sign in</h1>
 
       <div class="form-floating">
-        <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+        <input type="email" class="form-control jqEmail" id="floatingInput" placeholder="name@example.com"
+          name="_email">
         <label for="floatingInput">Email address</label>
       </div>
-      <div class="form-floating">
-        <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
+      <div class="form-floating hiddenDiv" hidden="true">
+        <input type="password" class="form-control jqPass" id="floatingPassword" placeholder="Password" name="pass">
         <label for="floatingPassword">Password</label>
       </div>
 
@@ -35,10 +36,9 @@
       <p class="mt-5 mb-3 text-body-secondary">© 2017–2024</p>
     </form>
   </main>
-  <script src="/docs/5.3/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-    crossorigin="anonymous"></script>
-
-
+  <script src="static/jquery-3.7.1.min.js"></script>
+  <script src="static/script.js"></script>
 
 </body>
+
+</html>
