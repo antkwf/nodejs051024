@@ -12,7 +12,7 @@
 <body class="d-flex align-items-center py-4 bg-body-tertiary">
 
   <main class="form-signin w-100 m-auto">
-    <form>
+    <form action="/login" method="post">
       <img class="mb-4" src="static/image/jaguarlogo.jpg" alt="" width="72" height="57">
       <h1 class="h3 mb-3 fw-normal">Please sign in</h1>
 
@@ -22,7 +22,7 @@
         <label for="floatingInput">Email address</label>
       </div>
       <div class="form-floating hiddenDiv" hidden="true">
-        <input type="password" class="form-control jqPass" id="floatingPassword" placeholder="Password" name="pass">
+        <input type="password" class="form-control jqPass" id="floatingPassword" placeholder="Password" name="_pass">
         <label for="floatingPassword">Password</label>
       </div>
 
