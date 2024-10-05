@@ -27,9 +27,14 @@ sv_app.get("/",(req,res) => {
 })
 
 sv_app.post("/login",(req,res) => {
-  res.render("main.ejs",{
-    email:req.body._email,
-    password:req.body._pass
-  })
+  if(req.validVal){
+    
+    res.render("main.ejs",{
+      email:req.body._email,
+      password:req.body._pass
+    })
+  }
+  else
+  res.redirect("/");
 })
 
